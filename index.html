@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Профиль рабочей группы</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<section class="form-head">
+    <h1 class="form-head__heading">Профиль рабочей группы</h1>
+    <div class="form-head__text">В данном разделе вы можете посмотреть и отредактировать информацию по своей рабочей
+        группе, настроить права
+        участников, расшарить настройки полностью или частично для других рабочих групп, а также сделать полную копию
+        вашей рабочей группы с ограниченным доступом для тонкой настройки без публичных оповещений.
+    </div>
+</section>
+<section class="form-body">
+    <h2 class="form-body__heading">Основная информация</h2>
+</section>
+
+    <div class="alert">
+        <div class="alert__main">
+            <h3 class="alert__heading">Внимание!</h3>
+            <div class="alert__text">
+                Ваши данные сохранены в браузере, но не отправлены на сервер.<br> Нажмите кнопку “Отправить”, чтобы завершить
+                редактирование.
+            </div>
+        </div>
+        <div class="alert__icon"></div>
+    </div>
+<section class="form-body">
+    <form class="form" action="test.php" method="post">
+        <div class="form__group form__group_error">
+            <input type="text" class="form__control" value="Моя новая рабочая группа">
+            <label class="form__label" for="">Название группы</label>
+            <div class="form__error">Название группы не должно быть пустым</div>
+        </div>
+        <div class="form__group ">
+            <input type="text" class="form__control" value="my-new-workgroup 2">
+            <label class="form__label" for="">Алиас</label>
+            <div class="form__error"></div>
+        </div>
+        <div class="form__group ">
+            <input type="text" class="form__control" value="unfo@my-domen.r">
+            <label class="form__label" for="">Электронная почта для обращений</label>
+            <div class="form__error"></div>
+        </div>
+        <div class="form__group ">
+            <input type="text" class="form__control" id="phone" type="number" placeholder="+7(XXX) XXX-XX-XX">
+            <label class="form__label" for="">Телефон представителя</label>
+            <div class="form__error"></div>
+        </div>
+        <div class="form__group">
+            <input type="text" class="form__control" value="Введите полные данные представителя">
+            <label class="form__label" for="">ФИО представителя</label>
+            <div class="form__error"></div>
+        </div>
+        <div class="form__group">
+            <input type="text" class="form__control" value="Введите полное наименование должности">
+            <label class="form__label" for="">Должность ответственного</label>
+            <div class="form__error"></div>
+        </div>
+        <div class="form__group form__group_textarea">
+            <textarea class="form__control form__control_textarea">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</textarea>
+            <label class="form__label" for="">Описание рабочей группы для внутреннего использования</label>
+            <div class="form__error"></div>
+        </div>
+        <div class="form__group">
+            <label class="form__checkbox">
+                Публичное описание отличается от внутреннего
+                <input type="checkbox">
+                <span class="form__checkmark"></span>
+            </label>
+        </div>
+        <div class="form__group form__group_textarea">
+            <textarea class="form__control form__control_textarea">Введите краткое и емкое описание</textarea>
+            <label class="form__label" for="">Публичное описание рабочей группы</label>
+            <div class="form__error"></div>
+        </div>
+        <div class="form-action">
+            <div class="form-action__left">
+                <button type="submit" class="btn btn_primary">Отправить на модерацию</button>
+                <button type="button" class="btn btn_secondary">Отмена</button>
+            </div>
+            <button type="submit" class="btn btn_secondary btn_drafts">Сохранить в мои черновики</button>
+        </div>
+    </form>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
